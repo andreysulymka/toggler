@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+}
+
+.header-toggler {
+    display: flex;
+    margin-left: auto;
+    margin-right: 16px;
+    align-items: center;
+};
+
+.toggle-container>span {
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 4px;
+    margin-right: 2px px;
+}
+.toggle {
+    margin-left: 12px;
+    margin-right: 12px;
+    position: relative;
+    padding: 2 20px;
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"].checkbox {
+    width: 40px;
+    height: 20px;
+    background: #fff;
+    position: relative;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    vertical-align: 2px;
+    outline: none;
+    border: 0.604701px solid #4B48DB;
+    border-radius: 20px;
+}
+input[type="checkbox"].checkbox+label {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: absolute;
+    left: 4px;
+    background: #fff;
+    opacity: 0.9;
+   background-color: #4B48DB;;
+}
+input[type="checkbox"].checkbox:checked+label {
+    left: 27px;
+}
+.toggle-text{
+@media screen and(min-width:1281px) {
+    display: none;
+}};
+.toggle-mobile-icon{
+@media screen and(min-width:768px) {
+        display: none;
+    }
+}
+
+
+
+
+
+/* /////////////////////////////// */
+
+html.dark,
+.dark body {
+    font-size: 16px;
+    font-family: sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+.dark .container {
+    background: #3c3c3c;
+}
+
+
